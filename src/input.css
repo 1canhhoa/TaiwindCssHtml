@@ -1,5 +1,52 @@
-@import "tailwindcss/base";
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-@import "tailwindcss/components";
+@import 'tailwindcss/base';
 
-@import "tailwindcss/utilities";
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+.th-menu-appear {
+  @apply top-10 z-50 bg-white w-full text-center absolute animate-slideDown;
+}
+.th-top-manu-icon {
+  @apply hover:text-gray-800 cursor-pointer relative lg:after:absolute
+  after:lg:block after:lg:bottom--2 after:lg:left-0 after:lg:bg-red-400 after:lg:h-0.5 
+  after:lg:w-0 hover:after:lg:w-full after:lg:transition-all after:lg:ease-in-out after:lg:duration-300;
+}
+/* .th-top-manu-icon-active {
+  @apply text-gray-800 cursor-pointer relative after:lg:absolute 
+  after:lg:block after:lg:bottom--2 after:lg:left-0 after:lg:bg-black after:lg:h-0.5 after:lg:w-full;
+} */
+.th-bag-icon {
+  @apply w-4 h-4;
+}
+.th-deco-line {
+  @apply h-px w-8 bg-gray-200;
+}
+.th-name-line {
+  @apply tracking-widest lowercase text-[13px] text-gray-500 mx-4 text-center;
+}
+.th-image-feature-mug {
+  @apply h-[540px];
+}
+.th-button {
+  @apply text-center uppercase tracking-wider py-4 px-8 text-[13px] font-semibold cursor-pointer hover:bg-opacity-95;
+}
+.th-bg-img {
+  @apply bg-no-repeat bg-cover bg-center;
+}
+.th-1 {
+  @apply text-xl font-bold;
+}
+.th-2 {
+  @apply text-sm font-medium;
+}
+.th-3 {
+  @apply text-xl font-medium;
+}
+.th-4 {
+  @apply text-sm text-gray-500;
+}
+.th-link {
+  @apply hover:text-coffee-400 cursor-pointer;
+}

@@ -4,23 +4,454 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://www.seiu1000.org/sites/main/files/main-images/camera_lense_0.jpeg" type="image/gif" sizes="16x16" />
     <title>Document</title>
     <link href="./output.css" rel="stylesheet" />
+    <script src="./main.js" type="text/javascript" async></script>
   </head>
   <body>
     <div id="root">
-      <div class="content-wrapper">
-        <header>header</header>
+      <div class="content-wrapper font-karla max-w-screen-2xl px-8 mx-auto">
+        <header class="p-6">
+          <nav class="flex flex-row justify-between items-center gap-4 relative">
+            <!-- HEADER-1 -->
+            <div class="text-xl logo basis-2/12 font-semibold text-center cursor-pointer">CoffeeStyle.</div>
+            <!-- HEADER-2 -->
+            <ul id="th-top-manu" class="basis-7/12 lg:flex hidden lg:items-center lg:justify-center lg:gap-8 text-base font-semibold text-gray-500">
+              <li class="th-top-manu-icon">
+                <a href="#">HOME</a>
+              </li>
+              <li class="th-top-manu-icon">
+                <a href="#">PRODUCT</a>
+              </li>
+              <li class="th-top-manu-icon">
+                <a href="#">BLOG</a>
+              </li>
+              <li class="th-top-manu-icon">
+                <a href="#">ABOUT</a>
+              </li>
+              <li class="th-top-manu-icon">
+                <a href="#">CONTACT</a>
+              </li>
+              <li class="th-top-manu-icon">
+                <a href="#">STYLEGUIDE</a>
+              </li>
+              <li class="th-top-manu-icon th-top-manu-icon-active">
+                <a href="#">ToHienDev</a>
+              </li>
+            </ul>
+            <!-- HEADER-3 -->
+            <ul class="basis-3/6 lg:basis-3/12 flex justify-end lg:justify-start items-center text-gray-500 font-medium text-base">
+              <li class="thtop-manu-icon">
+                <a href="#" class="flex justify-center items-center gap-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 004.25 22.5h15.5a1.875 1.875 0 001.865-2.071l-1.263-12a1.875 1.875 0 00-1.865-1.679H16.5V6a4.5 4.5 0 10-9 0zM12 3a3 3 0 00-3 3v.75h6V6a3 3 0 00-3-3zm-3 8.25a3 3 0 106 0v-.75a.75.75 0 011.5 0v.75a4.5 4.5 0 11-9 0v-.75a.75.75 0 011.5 0v.75z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+
+                  <span>CART</span>
+                  <span class="text-0.7 text-white rounded-full bg-orange-400 px-1.5">7</span>
+                </a>
+              </li>
+            </ul>
+            <!-- HEADER-4 -->
+            <div class="basis-1/6 lg:hidden flex items-center sm:px-8">
+              <svg id="th-toggle-menu-icon" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+              </svg>
+            </div>
+          </nav>
+        </header>
         <main>
-          <div class="slider"></div>
-          <div class="story"></div>
-          <div class="feature-mug"></div>
-          <div class="more-product"></div>
-          <div class="coffee-magazine-free"></div>
-          <div class="lifestyle-story"></div>
-          <div class="subcribe"></div>
+          <!-- Coffee Mugs -->
+          <div class="h-[630px] bg-[url('https://coffee-style-trungquandev.web.app/img/slider-bg.jpeg')] bg-no-repeat bg-cover bg-bottom">
+            <div class="w-full h-full px-16 md:px32 lg:px-64 xl:px-96 bg-gray-900 bg-opacity-40 flex items-center justify-center">
+              <div class="text-white text-center flex flex-col gap-8">
+                <div class="">BEST PLACE TO BUY COFFEE</div>
+                <div class="font-semibold text-5xl">Coffee Mugs</div>
+                <div class="">The most versatile furniture system ever created. Designed to fit your life, made to move and grow.</div>
+                <div class="flex items-center justify-center">
+                  <div class="th-button py-20 bg-white text-gray-900 w-max">EXPLORE OUR PRODUCTS</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- story -->
+          <div class="py-14 th-subhead-line flex justify-center items-center">
+            <div class="th-deco-line"></div>
+            <div class="th-name-line">our coffee story</div>
+            <div class="th-deco-line"></div>
+          </div>
+
+          <div class="w-[90%] lg:w-[65%] flex flex-col lg:flex-row justify-center items-center mx-auto gap-6 lg:gap-12">
+            <div class="basis-1/2">
+              <video autoplay loop muted class="w-[1000px] lg:w-full object-cover h-[500px] lg:h-[350px]">
+                <source src="./video/coffee.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="basis-1/2 text-center lg:text-left flex flex-col gap-8 px-8 lg:px-0 pr-3">
+              <div class="font-light text-3xl">What is your most special coffee?</div>
+              <div class="text-gray-500">
+                The French Press is a brewing method that comes closest to cupping. Cupping is the prescribed method by which coffee should be judged. Nothing separates the water from the coffee. To
+                properly discover the flavours, it is best to drink the coffee this way. Everyone has their favourite brewing method.
+              </div>
+              <div>
+                <a
+                  class="cursor-pointer text-coffee-400 hover:text-coffee-600 relative after:absolute after:-bottom-2 after:left-0 after:bg-coffee-50 hover:after:bg-coffee-200 after:h-0.5 after:w-full after:transition-all after:ease-in-out after:duration-400"
+                >
+                  Read the full Story
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- feature-mug -->
+          <div class="py-14 th-subhead-line flex justify-center items-center">
+            <div class="th-deco-line"></div>
+            <div class="th-name-line">feature mugs</div>
+            <div class="th-deco-line"></div>
+          </div>
+          <div class="w-[95%] lg:w-[65%] mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-28 lg:gap-4">
+              <!-- grid-1 -->
+              <div class="h-[540px]">
+                <div class="h-[540px] bg-no-repeat bg-cover bg-center bg-[url('https://coffee-style-trungquandev.web.app/img/featured-mug-01.jpg')]">
+                  <a href="">
+                    <div class="group relative w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300">
+                      <div class="absolute bg-white text-coffee-600 text-center font-medium top-2 right-2 px-6 py-2">On sale.</div>
+                      <div class="th-button bg-white hidden group-hover:block group-hover:animate-fadeIn absolute left-1/2 -translate-x-1/2 w-11/12 bottom-4">EXPLORE MUG</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="text-center mt-4">
+                  <a href="" class="text-xl hover:text-coffee-600">Pink Premium Ceramic</a>
+                  <div class="">
+                    <span class="text-xl text-coffee-400">$50.00</span>
+                    <span class="ml-2 text-gray-400 line-through">$200.00 USD</span>
+                  </div>
+                </div>
+              </div>
+              <!-- grid-2 -->
+              <div class="h-[540px]">
+                <div class="h-[540px] bg-no-repeat bg-cover bg-center bg-[url('https://coffee-style-trungquandev.web.app/img/featured-mug-02.jpg')]">
+                  <a href="">
+                    <div class="group relative w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300">
+                      <div class="absolute bg-white text-coffee-600 text-center font-medium top-2 right-2 px-6 py-2">On sale.</div>
+                      <div class="th-button bg-white hidden group-hover:block group-hover:animate-fadeIn absolute left-1/2 -translate-x-1/2 w-11/12 bottom-4">EXPLORE MUG</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="text-center mt-4">
+                  <a href="" class="text-xl hover:text-coffee-600">Pink Premium Ceramic</a>
+                  <div class="">
+                    <span class="text-xl text-coffee-400">$50.00</span>
+                    <span class="ml-2 text-gray-400 line-through">$200.00 USD</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- more product -->
+          <div class="py-32 th-subhead-line flex justify-center items-center">
+            <div class="th-deco-line"></div>
+            <div class="th-name-line">more product</div>
+            <div class="th-deco-line"></div>
+          </div>
+          <div class="w-[90%] mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div>
+              <div class="h-[400px] th-bg-img bg-[url('https://coffee-style-trungquandev.web.app/img/product-coffee-01.jpeg')]">
+                <a href="#" alt="abc">
+                  <div class="group w-full h-full relative hover:bg-gray-500 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300">
+                    <div class="absolute text-center px-3 py-3 right-2 top-2 bg-white text-black w-[30%]">On sale</div>
+                    <div class="th-button hidden group-hover:block group-hover:animate-fadeIn absolute left-1/2 -translate-x-1/2 uppercase text-center bottom-4 w-11/12 bg-white text-black">
+                      explore mug
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="text-center tracking-wider my-6">
+                <a href="#" class="font-medium text-xl hover:text-coffee-400">thịt chó</a>
+                <div class="my-3"><span class="text-[20px] text-coffee-400">$100.00</span><span class="line-through ml-4 text-gray-400">200.00</span></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="h-[400px] th-bg-img bg-[url('https://coffee-style-trungquandev.web.app/img/product-coffee-02.jpeg')]">
+                <a href="#" alt="abc">
+                  <div class="group w-full h-full relative hover:bg-gray-500 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300">
+                    <div class="absolute text-center px-3 py-3 right-2 top-2 bg-white text-black w-[30%]">On sale</div>
+                    <div class="th-button hidden group-hover:block group-hover:animate-fadeIn absolute left-1/2 -translate-x-1/2 uppercase text-center bottom-4 w-11/12 bg-white text-black">
+                      explore mug
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="text-center tracking-wider my-6">
+                <a href="#" class="font-medium text-xl hover:text-coffee-400">thịt cừu</a>
+                <div class="my-3"><span class="text-[20px] text-coffee-400">$120.00</span><span class="line-through ml-4 text-gray-400">200.00</span></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="h-[400px] th-bg-img bg-[url('https://coffee-style-trungquandev.web.app/img/product-coffee-03.jpeg')]">
+                <a href="#" alt="abc">
+                  <div class="group w-full h-full relative hover:bg-gray-500 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300">
+                    <div class="absolute text-center px-3 py-3 right-2 top-2 bg-white text-black w-[30%]">On sale</div>
+                    <div class="th-button hidden group-hover:block group-hover:animate-fadeIn absolute left-1/2 -translate-x-1/2 uppercase text-center bottom-4 w-11/12 bg-white text-black">
+                      explore mug
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="text-center tracking-wider my-6">
+                <a href="#" class="font-medium text-xl hover:text-coffee-400">thịt dê</a>
+                <div class="my-3"><span class="text-[20px] text-coffee-400">$240.00</span><span class="line-through ml-4 text-gray-400">200.00</span></div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div>
+              <div class="h-[400px] th-bg-img bg-[url('https://coffee-style-trungquandev.web.app/img/product-coffee-04.jpeg')]">
+                <a href="#" alt="abc">
+                  <div class="group w-full h-full relative hover:bg-gray-500 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300">
+                    <div class="absolute text-center px-3 py-3 right-2 top-2 bg-white text-black w-[30%]">On sale</div>
+                    <div class="th-button hidden group-hover:block group-hover:animate-fadeIn absolute left-1/2 -translate-x-1/2 uppercase text-center bottom-4 w-11/12 bg-white text-black">
+                      explore mug
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="text-center tracking-wider my-6">
+                <a href="#" class="font-medium text-xl hover:text-coffee-400">thịt dê</a>
+                <div class="my-3"><span class="text-[20px] text-coffee-400">$240.00</span><span class="line-through ml-4 text-gray-400">200.00</span></div>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div>
+              <div class="h-[400px] th-bg-img bg-[url('https://coffee-style-trungquandev.web.app/img/product-coffee-05.jpeg')]">
+                <a href="#" alt="abc">
+                  <div class="group w-full h-full relative hover:bg-gray-500 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300">
+                    <div class="absolute text-center px-3 py-3 right-2 top-2 bg-white text-black w-[30%]">On sale</div>
+                    <div class="th-button hidden group-hover:block group-hover:animate-fadeIn absolute left-1/2 -translate-x-1/2 uppercase text-center bottom-4 w-11/12 bg-white text-black">
+                      explore mug
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="text-center tracking-wider my-6">
+                <a href="#" class="font-medium text-xl hover:text-coffee-400">thịt dê</a>
+                <div class="my-3"><span class="text-[20px] text-coffee-400">$240.00</span><span class="line-through ml-4 text-gray-400">200.00</span></div>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div>
+              <div class="h-[400px] th-bg-img bg-[url('https://coffee-style-trungquandev.web.app/img/product-coffee-06.jpeg')]">
+                <a href="#" alt="abc">
+                  <div class="group w-full h-full relative hover:bg-gray-500 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300">
+                    <div class="absolute text-center px-3 py-3 right-2 top-2 bg-white text-black w-[30%]">On sale</div>
+                    <div class="th-button hidden group-hover:block group-hover:animate-fadeIn absolute left-1/2 -translate-x-1/2 uppercase text-center bottom-4 w-11/12 bg-white text-black">
+                      explore mug
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="text-center tracking-wider my-6">
+                <a href="#" class="font-medium text-xl hover:text-coffee-400">thịt dê</a>
+                <div class="my-3"><span class="text-[20px] text-coffee-400">$240.00</span><span class="line-through ml-4 text-gray-400">200.00</span></div>
+              </div>
+            </div>
+            <!-- 7 -->
+            <div>
+              <div class="h-[400px] th-bg-img bg-[url('https://coffee-style-trungquandev.web.app/img/product-coffee-07.jpeg')]">
+                <a href="#" alt="abc">
+                  <div class="group w-full h-full relative hover:bg-gray-500 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300">
+                    <div class="absolute text-center px-3 py-3 right-2 top-2 bg-white text-black w-[30%]">On sale</div>
+                    <div class="th-button hidden group-hover:block group-hover:animate-fadeIn absolute left-1/2 -translate-x-1/2 uppercase text-center bottom-4 w-11/12 bg-white text-black">
+                      explore mug
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="text-center tracking-wider my-6">
+                <a href="#" class="font-medium text-xl hover:text-coffee-400">thịt dê</a>
+                <div class="my-3"><span class="text-[20px] text-coffee-400">$240.00</span><span class="line-through ml-4 text-gray-400">200.00</span></div>
+              </div>
+            </div>
+            <!-- 8 -->
+            <div>
+              <div class="h-[400px] th-bg-img bg-[url('https://coffee-style-trungquandev.web.app/img/product-coffee-08.jpeg')]">
+                <a href="#" alt="abc">
+                  <div class="group w-full h-full relative hover:bg-gray-500 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300">
+                    <div class="absolute text-center px-3 py-3 right-2 top-2 bg-white text-black w-[30%]">On sale</div>
+                    <div class="th-button hidden group-hover:block group-hover:animate-fadeIn absolute left-1/2 -translate-x-1/2 uppercase text-center bottom-4 w-11/12 bg-white text-black">
+                      explore mug
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="text-center tracking-wider my-6">
+                <a href="#" class="font-medium text-xl hover:text-coffee-400">thịt dê</a>
+                <div class="my-3"><span class="text-[20px] text-coffee-400">$240.00</span><span class="line-through ml-4 text-gray-400">200.00</span></div>
+              </div>
+            </div>
+            <!-- 9 -->
+            <div>
+              <div class="h-[400px] th-bg-img bg-[url('https://coffee-style-trungquandev.web.app/img/product-coffee-09.jpeg')]">
+                <a href="#" alt="abc">
+                  <div class="group w-full h-full relative hover:bg-gray-500 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300">
+                    <div class="absolute text-center px-3 py-3 right-2 top-2 bg-white text-black w-[30%]">On sale</div>
+                    <div class="th-button hidden group-hover:block group-hover:animate-fadeIn absolute left-1/2 -translate-x-1/2 uppercase text-center bottom-4 w-11/12 bg-white text-black">
+                      explore mug
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="text-center tracking-wider my-6">
+                <a href="#" class="font-medium text-xl hover:text-coffee-400">thịt dê</a>
+                <div class="my-3"><span class="text-[20px] text-coffee-400">$240.00</span><span class="line-through ml-4 text-gray-400">200.00</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BUY 2 MUGS AND GET A COFFEE MAGAZINE FREE -->
+          <div class="py-14 th-subhead-line flex justify-center items-center">
+            <div class="th-deco-line"></div>
+            <div class="th-name-line">BUY 2 MUGS AND GET A COFFEE MAGAZINE FREE</div>
+            <div class="th-deco-line"></div>
+          </div>
+          <!-- <div class="flex items-center justify-center gap-x-40"> -->
+
+          <!-- Css grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 w-[70%] md:w-[95%] xl:w-[65%] mx-auto gap-4 md:gap-12">
+            <div class="grid grid-rows-[400px_200px] md:grid-rows-[130px_130px] md:grid-cols-[2fr_1fr] gap-4">
+              <div class="th-bg-img bg-[url('https://coffee-style-trungquandev.web.app/img/magazine-image-01.jpeg')] sm:col-span-2 md:row-span-2"></div>
+              <div class="th-bg-img bg-[url('https://coffee-style-trungquandev.web.app/img/magazine-image-02.jpeg')]"></div>
+              <div class="th-bg-img bg-[url('https://coffee-style-trungquandev.web.app/img/magazine-image-03.jpeg')]"></div>
+            </div>
+            <div class="flex items-center md:items-start text-center md:text-start justify-center flex-col gap-4">
+              <div class="text-gray-500 text-sm">PREMIUM OFFER</div>
+              <div class="font-normal text-3xl">Get our Coffee Magazine</div>
+              <div class="text-gray-500">The most versatile furniturexw system ever created. Designed to fit your life.</div>
+              <a href="#" alt="hien" class="th-button bg-black text-white mx-auto md:mx-0">
+                <span class="">START SHOPPING</span>
+              </a>
+            </div>
+          </div>
+          <!-- parallax -->
+          <div class="py-14 th-subhead-line flex justify-center items-center">
+            <div class="th-deco-line"></div>
+            <div class="th-name-line">parallax</div>
+            <div class="th-deco-line"></div>
+          </div>
+
+          <div class="bg-[url('./img/bg-parallax-01.jpeg')] bg-cover bg-no-repeat bg-center bg-fixed h-96 w-[100vw] relative left-[calc(-50vw_+_50%)]"></div>
+          <!-- BEHIND THE MUGS, LIFESTYLE STORIES -->
+          <div class="py-14 th-subhead-line flex justify-center items-center">
+            <div class="th-deco-line"></div>
+            <div class="th-name-line">BEHIND THE MUGS, LIFESTYLE STORIES</div>
+            <div class="th-deco-line"></div>
+          </div>
+          <div class="mx-auto w-[90%] xl:w-[60%]">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4">
+              <div class="grid gap-4">
+                <div class="h-[330px] th-bg-img bg-[url('https://coffee-style-trungquandev.web.app/img/lifestyle-story-01.jpeg')]">
+                  <div class="group relative w-full h-full hover:bg-gray-600 hover:bg-opacity-20 hover:transition-all hover:ease-in-out hover:duration-300">
+                    <a href="" class="hidden group-hover:block group-hover:animate-fadeIn left-1/2 -translate-x-1/2 absolute text-center th-button bottom-3 w-11/12 bg-white text-black"
+                      >read the full story</a
+                    >
+                  </div>
+                </div>
+                <div class="text-xl hover:text-coffee-400">Health Check: why do I get a headache when I haven't had my coffee?</div>
+                <div class="text-gray-500">It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</div>
+                <div class="text-gray-500 text-xs">OCTOBER 9, 2018</div>
+              </div>
+              <div class="grid gap-4">
+                <div class="h-[330px] th-bg-img bg-[url('https://coffee-style-trungquandev.web.app/img/lifestyle-story-02.jpeg')]">
+                  <div class="group relative w-full h-full hover:bg-gray-600 hover:bg-opacity-20 hover:transition-all hover:ease-in-out hover:duration-300">
+                    <a href="" class="hidden group-hover:block group-hover:animate-fadeIn left-1/2 -translate-x-1/2 absolute text-center th-button bottom-3 w-11/12 bg-white text-black"
+                      >>read the full story</a
+                    >
+                  </div>
+                </div>
+                <div class="text-xl hover:text-coffee-400">Health Check: why do I get a headache when I haven't had my coffee?</div>
+                <div class="text-gray-500">It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</div>
+                <div class="text-gray-500 text-xs">OCTOBER 9, 2018</div>
+              </div>
+
+              <div class="grid gap-4">
+                <div class="h-[330px] th-bg-img bg-[url('https://coffee-style-trungquandev.web.app/img/lifestyle-story-03.jpeg')]">
+                  <div class="group relative w-full h-full hover:bg-gray-600 hover:bg-opacity-20 hover:transition-all hover:ease-in-out hover:duration-300">
+                    <a href="" class="hidden group-hover:block group-hover:animate-fadeIn left-1/2 -translate-x-1/2 absolute text-center th-button bottom-3 w-11/12 bg-white text-black"
+                      >>read the full story</a
+                    >
+                  </div>
+                </div>
+                <div class="text-xl hover:text-coffee-400">Health Check: why do I get a headache when I haven't had my coffee?</div>
+                <div class="text-gray-500">It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</div>
+                <div class="text-gray-500 text-xs">OCTOBER 9, 2018</div>
+              </div>
+            </div>
+          </div>
+          <!-- subcribe -->
+          <div class="my-10 th-subhead-line flex justify-center items-center">
+            <div class="th-deco-line"></div>
+            <div class="th-name-line">subcribe</div>
+            <div class="th-deco-line"></div>
+          </div>
+
+          <div class="h-[350px] bg-black">
+            <div class="w-full h-full bg-gray-600 bg-opacity-40 gap-5 flex flex-col justify-center items-center">
+              <div class="flex justify-center items-center">
+                <div class="th-deco-line"></div>
+                <div class="tracking-widest lowercase text-sm text-gray-200 mx-4 text-center">SIGN UP AND GET FREE COFFEE BAGS</div>
+                <div class="th-deco-line"></div>
+              </div>
+              <div class="text-3xl text-white text-center">Coffee Updates</div>
+              <div class="sm:w-[80%] md:flex-row flex flex-col gap-4 justify-center">
+                <input
+                  class="mx-auto sm:w-[80%] md:w-[350px] h-[50px] border-[1px] pl-4 border-gray-400 hover:border-white focus:border-white duration-500 text-white text-sm font-semibold bg-transparent outline-none placeholder:tracking-widest"
+                  placeholder="nhamvanhien31102002@gmail.com"
+                  type="text"
+                />
+                <button class="sm:w-[80%] mx-auto th-button bg-white text-black">subcribe</button>
+              </div>
+            </div>
+          </div>
         </main>
-        <footer>footer</footer>
+
+        <footer class="md:w-[90%] xl:w-[60%] mx-auto my-20 gap-12">
+          <div class="grid sm:grid-cols-1 sm:text-center md:grid-cols-[2fr_1fr_1fr_2fr] md:grid-rows-[300px] gap-4">
+            <div class="flex flex-col gap-3 pr-8">
+              <div class="th-1">CoffeeStyle.</div>
+              <div class="th-4">Delivering the best coffee life since 1996. From coffee geeks to the real ones.</div>
+              <div class="th-4 th-link mt-4 md:mt-16">Tohien02 Blog. © 2023</div>
+            </div>
+            <div class="flex flex-col gap-3 pr-8">
+              <div class="th-2">MENU</div>
+              <div class="th-4 th-link">Home</div>
+              <div class="th-4 th-link">Our Products</div>
+              <div class="th-4 th-link">About</div>
+              <div class="th-4 th-link">Contact</div>
+              <div class="th-4 th-link">Styleguide</div>
+              <div class="th-4 th-link">Trungquandev</div>
+            </div>
+            <div class="flex flex-col gap-4 pr-8">
+              <div class="th-2">FOLLLOW US</div>
+              <div class="th-4 th-link">Facebook</div>
+              <div class="th-4 th-link">Instagram</div>
+              <div class="th-4 th-link">Pinterest</div>
+              <div class="th-4 th-link">Twitter</div>
+            </div>
+            <div class="flex flex-col gap-4 pr-8">
+              <div class="th-2">CONTACT US</div>
+              <div class="th-4">We're Always Happy to Help</div>
+              <div class="th-3 th-link">nhamvanhien@gmail.com</div>
+              <div class="th-4 th-link mt-10">Powered by Tohien Author</div>
+            </div>
+          </div>
+        </footer>
+        <div class="h-[1000px]"></div>
       </div>
     </div>
   </body>
